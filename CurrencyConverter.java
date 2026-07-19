@@ -20,5 +20,10 @@ public class CurrencyConverter {
         System.out.println("dollar: " + dollar);
         System.out.println("Rupee: " + Rupee);
     }
+
+    public static void main(String[] args) {
+        CurrencyConverter cc = new CurrencyConverter();
+        cc.printCurrencies();
+    }
     
 }
