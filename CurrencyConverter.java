@@ -25,5 +25,4 @@ public class CurrencyConverter {
         CurrencyConverter cc = new CurrencyConverter();
         cc.printCurrencies();
     }
-    
 }
