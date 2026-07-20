@@ -23,4 +23,13 @@ public class MatrixVectorCalculator {
         }
         return result;
     }
+
+    public static void main(String[] args) {
+        
+        int[] a = {2, 0, 4};
+        int[] b = {1, 4, 3};
+        
+        int dotProductResult = dotProduct(a, b);
+        System.out.println("Dot Product (Vector x Vector): " + dotProductResult); 
+    }
 }
