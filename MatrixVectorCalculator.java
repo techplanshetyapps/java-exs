@@ -37,4 +37,13 @@ public class MatrixVectorCalculator {
             {2, 0, 4}, // Row 0
             {1, 4, 3}  // Row 1
         };
+
+        int[] matrixVectorResult = multiplyMatrixVector(matrix, a);
+        
+        System.out.print("Matrix x Vector Result: [");
+        for (int i = 0; i < matrixVectorResult.length; i++) {
+            System.out.print(matrixVectorResult[i] + (i < matrixVectorResult.length - 1 ? ", " : ""));
+        }
+        System.out.println("]"); 
+    }
 }
