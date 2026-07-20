@@ -13,4 +13,9 @@ public class CurrencyConverter2 {
         // 2. Using the 'length' field to dynamically reference the last element (index 6)
         System.out.println("$australian: " + exchangeRates[exchangeRates.length - 1]);
     }
+
+    public static void main(String[] args) {
+        CurrencyConverter cc = new CurrencyConverter();
+        cc.printCurrencies();
+    }
 }
