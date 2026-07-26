@@ -58,4 +58,8 @@ private static void hashMapDemo() {
 		int age = (Integer) profile1.get("age");
 		System.out.println("Age: " + age);
 	}
+
+    public static void main(String[] args) {
+		hashMapDemo();
+	}
 }
