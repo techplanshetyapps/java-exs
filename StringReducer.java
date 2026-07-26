@@ -5,6 +5,7 @@ public class StringReducer {
         String[] grades = {"A", "B", "C"};
    
         StringBuilder concat = Arrays.stream(grades)
+                .map(StringBuilder::new)
     }
     
 }
