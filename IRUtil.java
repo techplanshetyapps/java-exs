@@ -16,5 +16,15 @@ public class IRUtil {
             return frequencyCount;
         }
     public static double queryFrequency(String query, String doc) {
-    }
+
+            int frequencyCount = getFrequencyCount(query, doc);
+            
+            String[] words = doc.split(" ");
+            int totalQueryCount = words.length;
+            
+            if (totalQueryCount == 0) {
+                return 0.0;
+            }
+            return (double) frequencyCount / totalQueryCount;
+        }
 }
