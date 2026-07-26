@@ -6,6 +6,7 @@ public class StringReducer {
    
         StringBuilder concat = Arrays.stream(grades)
                 .map(StringBuilder::new)
+                .reduce(new StringBuilder(), (sb1, sb2) -> sb1.append(sb2));
     }
     
 }
